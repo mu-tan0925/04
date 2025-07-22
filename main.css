@@ -1,0 +1,294 @@
+/* Google Fonts */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* 読みやすい日本語フォント */
+    background-color: #FFFFFF; /* 真っ白な背景 */
+    color: #4A4A4A; /* 落ち着いたグレーの文字色 */
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Base Styles */
+h1, h2, h3 {
+    font-family: 'Quicksand', sans-serif; /* モダンで柔らかな英字フォント */
+    font-weight: 700;
+    color: #7B68EE; /* ミディアムパープル（パステル系） */
+}
+
+a {
+    color: #6A5ACD; /* スレートブルー（リンク色） */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #87CEEB; /* スカイブルー（ホバー時） */
+}
+
+ul {
+    list-style: none; /* デフォルトのリストスタイルをなくす */
+    padding: 0;
+}
+
+/* Header */
+.main-header {
+    background-color: #DDA0DD; /* プラム（パステル系） */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.main-header h1 {
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF; /* ヘッダー内の文字色を白に */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.main-header p {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #F8F8FF;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-section {
+    background-color: #FFFFFF; /* セクションも白背景 */
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08); /* 柔らかい影 */
+    border: 1px solid #F0F0F0; /* ほんのりとした境界線 */
+}
+
+.content-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    color: #7B68EE; /* ミディアムパープル */
+}
+
+.content-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #87CEEB; /* スカイブルーのアクセントライン */
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.content-section p {
+    font-size: 1.05em;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: #5C5C5C;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #888;
+}
+
+/* Image with Text Layout */
+.image-with-text {
+    display: flex;
+    flex-wrap: wrap; /* 小さい画面で折り返す */
+    gap: 30px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-with-text .image-wrapper {
+    flex: 1;
+    min-width: 280px; /* 画像の最小幅 */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-with-text .text-content {
+    flex: 2;
+    min-width: 300px; /* テキストの最小幅 */
+}
+
+/* Learn Modules (Cards) */
+.learn-modules {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.learn-card {
+    background-color: #F8F8FF; /* ゴーストホワイト（パステル系） */
+    flex: 1;
+    min-width: 280px;
+    max-width: 45%; /* 2列表示 */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border: 1px solid #E6E6FA; /* ラベンダーの薄い枠線 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.learn-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.learn-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #7B68EE;
+    text-align: center;
+}
+
+.learn-card ul {
+    list-style: disc; /* リストのスタイルを再設定 */
+    padding-left: 25px;
+}
+
+.learn-card li {
+    margin-bottom: 10px;
+}
+
+.learn-card li a {
+    font-size: 1.05em;
+    color: #6A5ACD;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+/* Image Below List */
+.image-below-list {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image-below-list .image-wrapper {
+    max-width: 600px; /* 画像の最大幅 */
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* General Image Styling */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* 余白をなくす */
+}
+
+/* Circular Image Option (for specific images if needed) */
+/* 今回のレイアウトではあまり使いませんが、参考として残します */
+.circular-img {
+    border-radius: 50%;
+    width: 180px; /* 固定サイズ */
+    height: 180px; /* 固定サイズ */
+    object-fit: cover;
+    border: 3px solid #FFDAB9; /* パステルオレンジのボーダー */
+    box-shadow: 0 0 8px rgba(255, 218, 185, 0.7);
+}
+
+
+/* Links Section */
+.link-list li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.link-list li a {
+    font-size: 1.1em;
+    padding: 8px 15px;
+    background-color: #E6E6FA; /* ラベンダー（パステル系） */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.link-list li a:hover {
+    background-color: #D8BFD8; /* シスル（少し濃いラベンダー） */
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.main-footer {
+    background-color: #DDA0DD; /* プラム（ヘッダーと同じ色） */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2.2em;
+    }
+    .main-header p {
+        font-size: 0.9em;
+    }
+    .main-content {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    .content-section {
+        padding: 30px 20px;
+    }
+    .content-section h2 {
+        font-size: 1.8em;
+    }
+    .image-with-text {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .image-with-text .image-wrapper {
+        min-width: unset;
+        width: 100%;
+    }
+    .image-with-text .text-content {
+        min-width: unset;
+        width: 100%;
+    }
+    .learn-modules {
+        flex-direction: column;
+        align-items: center;
+    }
+    .learn-card {
+        max-width: 100%;
+    }
+    .image-below-list .image-wrapper {
+        max-width: 100%;
+    }
+    .link-list li a {
+        font-size: 1em;
+        padding: 10px;
+    }
+}

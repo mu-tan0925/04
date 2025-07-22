@@ -1,0 +1,73 @@
+body {
+    font-family: 'Yu Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdf6; /* 淡い黄緑色 */
+    color: #333;
+}
+
+/* ページ全体のコンテンツを囲むコンテナ */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 1em;
+}
+
+header {
+    background-color: #c4ff9f; /* 少し濃い黄緑色 */
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+    border-bottom: 5px solid #d4ff99; /* 明るい黄緑色 */
+}
+
+h1, h2, h3 {
+    margin: 0.5em 0;
+}
+
+#about-course, #what-you-learn, #what-you-learn2 {
+    padding: 2em 0;
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.image-box, .text-box {
+    flex: 1 1 50%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-box {
+    background-color: #fff8c7; /* 淡いクリーム色 */
+    border-radius: 12px;
+    padding: 2em;
+}
+
+ul {
+    padding-left: 1.5em;
+    line-height: 1.6;
+    margin-top: 1em; /* リストの上に余白を追加 */
+}
+
+li {
+    margin-bottom: 0.5em;
+    background: #eaffd8; /* 淡い黄緑色 */
+    padding: 0.5em;
+    border-radius: 8px;
+}
